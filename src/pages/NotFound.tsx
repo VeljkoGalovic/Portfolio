@@ -36,7 +36,7 @@ const NotFound = () => {
         
         <AnimatedSection delay={300}>
           <Button asChild size="lg" className="button-glow">
-            <Link to="/">
+            <Link to="/index">
               <Home size={18} className="mr-2" />
               Return to Home
             </Link>
