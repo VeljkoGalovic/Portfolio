@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, MapPin, MessageSquare, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, MessageSquare, Phone, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
