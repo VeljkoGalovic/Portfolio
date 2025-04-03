@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
       )}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="relative z-10">
+        <Link to="/index" className="relative z-10">
           <h1 className="text-2xl font-display font-bold">
             <span className="heading-gradient">{'{'}</span>
             <span className="text-foreground">V&V</span>
