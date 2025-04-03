@@ -73,103 +73,14 @@ const Contact: React.FC = () => {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20 md:py-32">
-        <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Contact Form */}
-            <AnimatedSection>
-              <div className="glass-card p-8">
-                <h2 className="text-2xl font-display font-bold mb-6">Send Us a Message</h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Your Name
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="John Doe"
-                      required
-                      className="w-full"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium mb-2">
-                      Email Address
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="john@example.com"
-                      required
-                      className="w-full"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium mb-2">
-                      Subject
-                    </label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      placeholder="Project Inquiry"
-                      required
-                      className="w-full"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Your Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell us about your project..."
-                      required
-                      className="w-full min-h-[150px]"
-                    />
-                  </div>
-                  
-                  <Button 
-                    type="submit" 
-                    className="w-full button-glow" 
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (
-                      <span className="flex items-center">
-                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        Sending...
-                      </span>
-                    ) : (
-                      <span className="flex items-center">
-                        Send Message
-                        <Send size={16} className="ml-2" />
-                      </span>
-                    )}
-                  </Button>
-                </form>
-              </div>
-            </AnimatedSection>
-
+      <section className="hero-section pt-32 pb-20 md:pt-40 md:pb-32">
+        <div className="section-container grid place-items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-16">
             {/* Contact Information */}
-            <AnimatedSection delay={100}>
+            
+            <AnimatedSection delay={100} className="section-container relative z-10">
               <div className="space-y-8">
-                <div className="glass-card p-8">
+                <div className="glass-card p-12">
                   <h2 className="text-2xl font-display font-bold mb-6">Contact Information</h2>
                   <div className="space-y-6">
                     <div className="flex items-start space-x-4">
@@ -234,7 +145,7 @@ const Contact: React.FC = () => {
                 <div className="glass-card p-8">
                   <h2 className="text-2xl font-display font-bold mb-6">Project Inquiry</h2>
                   <p className="text-muted-foreground mb-4">
-                    Looking for a custom quote? Fill out our project brief form for a tailored proposal.
+                    Looking for a custom quote? Send us an email so we can make a proposal tailoerd to your needs.
                   </p>
                   <div className="flex items-center space-x-2 text-primary">
                     <MessageSquare size={18} />

@@ -175,7 +175,7 @@ const Services: React.FC = () => {
                   <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">1</div>
                   </div>
-                  <div className="ml-12 md:ml-0 md:ml-[calc(50%+2rem)] glass-card p-6 md:w-1/2">
+                  <div className="ml-12 md:ml-[calc(50%+2rem)] glass-card p-6 md:w-1/2">
                     <h3 className="text-xl font-bold mb-2">Discovery & Planning</h3>
                     <p className="text-muted-foreground">We start by understanding your business, target audience, and project goals to create a comprehensive strategy.</p>
                   </div>
@@ -199,7 +199,7 @@ const Services: React.FC = () => {
                   <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">3</div>
                   </div>
-                  <div className="ml-12 md:ml-0 md:ml-[calc(50%+2rem)] glass-card p-6 md:w-1/2">
+                  <div className="ml-12 md:ml-[calc(50%+2rem)] glass-card p-6 md:w-1/2">
                     <h3 className="text-xl font-bold mb-2">Development</h3>
                     <p className="text-muted-foreground">Our developers bring the designs to life using the latest technologies and following best practices.</p>
                   </div>
@@ -223,7 +223,7 @@ const Services: React.FC = () => {
                   <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center">
                     <div className="bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center">5</div>
                   </div>
-                  <div className="ml-12 md:ml-0 md:ml-[calc(50%+2rem)] glass-card p-6 md:w-1/2">
+                  <div className="ml-12 md:ml-[calc(50%+2rem)] glass-card p-6 md:w-1/2">
                     <h3 className="text-xl font-bold mb-2">Launch & Support</h3>
                     <p className="text-muted-foreground">We deploy your website and provide ongoing support to ensure everything runs smoothly.</p>
                   </div>
